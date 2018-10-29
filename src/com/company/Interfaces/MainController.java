@@ -69,8 +69,13 @@ public class MainController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        Tab tab = new Tab("Tab 1");
 
+        TextArea textArea = new TextArea("Some Text");
+        textArea.getStyleClass().add("codeEditorCss");
 
+        tab.setContent(textArea);
+        TabManager.getTabs().add(tab);
     }
 
 

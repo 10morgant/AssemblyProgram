@@ -1,0 +1,81 @@
+/*Buttons */
+.buttonCss {
+    -fx-font-size: 12;
+    -fx-text-fill: #e5dfc5;
+    -fx-background-color: #3c3f41;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.buttonCss:pressed {
+    -fx-border-color: #79221f;
+    -fx-background-color: #79221f;
+}
+
+.buttonCss:hover {
+    -fx-border-color: #ad312d;
+    -fx-background-color: #ad312d;
+}
+
+.toggleButtonCss {
+    -fx-font-family: "Hanken"; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 12;
+    -fx-text-fill: #e5dfc5;
+    -fx-border-color: transparent;
+    -fx-base: #3c3f41;
+    -fx-border-radius: 30 30 30 30;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.toggleButtonCss:selected {
+    -fx-border-color: #ad312d;
+    -fx-base: #ad312d;
+}
+
+.toggleButtonCss:hover {
+    -fx-border-color: #79221f;
+    -fx-base: #79221f;
+}
+
+/*Panes */
+.topPaneCss {
+    -fx-background-color: #333;
+}
+
+.memoryGrid {
+    -fx-background-color: #3c3f41;
+}
+
+/* Output box */
+.outputPaneCss {
+    -fx-font-family: "Hanken"; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 14;
+    -fx-text-fill: #cfc9af;
+    -fx-border-color: #2b2b2b;
+}
+
+.outputPaneCss .content {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #2b2b2b;
+}
+
+.outputPaneCss .scroll-pane {
+    -fx-background-color: #2b2b2b;
+}
+
+/* Code Editor */
+.codeEditorCss {
+    -fx-font-family: "Hanken"; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 14;
+    -fx-text-fill: #cfc9af;
+    -fx-border-color: #2b2b2b;
+}
+
+.codeEditorCss .content {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #2b2b2b;
+}
+
+.codeEditorCss .scroll-pane {
+    -fx-background-color: #2b2b2b;
+}
