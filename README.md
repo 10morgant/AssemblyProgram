@@ -22,4 +22,9 @@ Jun the jar by typing  `Java -jar AssemblyProgram-x-xx-xx.jar` in your terminal.
 Or just double click it.
 
 ## Screen shots 
-- [ ] To Do - add screen shots
+- [ ] To Do - add more screen shots
+
+#### Initial design
+![alt text][logo]
+
+[logo]: https://github.com/10morgant/AssemblyProgram/blob/master/images/MainWindow%2029-10-2018.PNG "MainWindow 29-10-2018"
