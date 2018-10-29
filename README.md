@@ -7,7 +7,7 @@ It allows the writing and "Execution" of code and displays it in a "Compiled for
 
 It aims to make use of Object-Orientated Programming styles and techniques. This is a rewrite of a previous project, written for A-Level Coursework in this [repo](https://github.com/10morgant/TimSim). Warning the old version is not maintained and is almost defiantly riddled with bugs.
 
-##Features
+## Features
 - Code Highlighting
 - Tab grouping
 - Built in help
