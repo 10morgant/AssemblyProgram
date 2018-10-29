@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="1000.0" prefWidth="1210.0"
+            xmlns="http://javafx.com/javafx/8.0.152" fx:controller="com.company.Interfaces.MainController">
+    <children>
+        <BorderPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <AnchorPane prefHeight="837.0" prefWidth="1210.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <SplitPane fx:id="mainContent" dividerPositions="0.37" layoutY="1.0" prefHeight="853.0"
+                                   prefWidth="1210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                        AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <TabPane fx:id="TabManager" maxWidth="950.0" prefHeight="712.0" prefWidth="788.0"
+                                         tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0"
+                                         AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                         AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                    </tabs>
+                                </TabPane>
+                            </AnchorPane>
+                            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                        AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <GridPane fx:id="memory" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                                </GridPane>
+                                <children>
+                                    <TextArea fx:id="outputConsole" prefHeight="180.0" prefWidth="200.0"
+                                              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                              AnchorPane.rightAnchor="0.0"/>
+                                </children>
+                            </AnchorPane>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </center>
+            <bottom>
+
+            </bottom>
+            <top>
+                <VBox fx:id="topPane" prefHeight="157.0" prefWidth="1210.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane maxHeight="30.0" minHeight="0.0" minWidth="0.0" prefHeight="30.0" prefWidth="953.0">
+                            <children>
+                                <MenuBar fx:id="menuBar" prefHeight="32.0" prefWidth="1210.0"
+                                         AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0"
+                                         AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                                </MenuBar>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="175.0" minHeight="0.0" minWidth="0.0" prefHeight="123.0"
+                                    prefWidth="1210.0">
+                            <children>
+                                <Button fx:id="compileButton" alignment="CENTER" layoutX="6.0" layoutY="6.0"
+                                        minWidth="42.0" mnemonicParsing="false" prefHeight="24.0"
+                                        prefWidth="127.0" text="Compile" textAlignment="CENTER"
+                                        AnchorPane.bottomAnchor="44.0" AnchorPane.topAnchor="44.0">
+
+                                </Button>
+                                <Button fx:id="executeButton" alignment="CENTER" layoutX="138.0" layoutY="6.0"
+                                        minWidth="42.0" mnemonicParsing="false" prefHeight="24.0"
+                                        prefWidth="127.0" text="Execute" textAlignment="CENTER"
+                                        AnchorPane.bottomAnchor="44.0" AnchorPane.topAnchor="44.0">
+
+                                </Button>
+                                <Button fx:id="lineStepButton" alignment="CENTER" layoutX="270.0" layoutY="6.0"
+                                        minWidth="42.0" mnemonicParsing="false" prefHeight="24.0"
+                                        prefWidth="127.0" text="Line Step" textAlignment="CENTER"
+                                        AnchorPane.bottomAnchor="44.0" AnchorPane.topAnchor="44.0">
+
+                                </Button>
+                                <ToggleButton fx:id="instructionSetButton" alignment="CENTER" layoutX="404.0"
+                                              layoutY="2.0" mnemonicParsing="false"
+                                              prefHeight="24.0" prefWidth="170.0" textAlignment="CENTER"
+                                              AnchorPane.bottomAnchor="44.0" AnchorPane.topAnchor="44.0"/>
+                                <Label fx:id="stepUser1" layoutX="630.0" layoutY="15.0" prefHeight="25.0"
+                                       prefWidth="150.0"
+                                       text="MAR ← [PC]"/>
+                                <Label fx:id="stepUser2" layoutX="630.0" layoutY="45.0" prefHeight="25.0"
+                                       prefWidth="150.0"
+                                       text="PC  ← [PC] + 1"/>
+                                <Label fx:id="stepUser3" layoutX="630.0" layoutY="75.0" prefHeight="25.0"
+                                       prefWidth="150.0"
+                                       text="MBR ← [Memory] MAR"/>
+                                <Label fx:id="stepUser4" layoutX="630.0" layoutY="105.0" prefHeight="25.0"
+                                       prefWidth="150.0"
+                                       text="CIR ← [MBR]"/>
+                                <Label fx:id="stepTheory1" layoutX="796.0" layoutY="15.0" prefHeight="25.0"
+                                       prefWidth="150.0"
+                                       text="MAR ← [PC]"/>
+                                <Label fx:id="stepTheory2" layoutX="796.0" layoutY="45.0" prefHeight="25.0"
+                                       prefWidth="150.0"
+                                       text="PC  ← [PC] + 1"/>
+                                <Label fx:id="stepTheory3" layoutX="796.0" layoutY="75.0" prefHeight="25.0"
+                                       prefWidth="150.0"
+                                       text="MBR ← [Memory] MAR"/>
+                                <Label fx:id="stepTheory4" layoutX="796.0" layoutY="105.0" prefHeight="25.0"
+                                       prefWidth="150.0" text="CIR ← [MBR]"/>
+
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>
