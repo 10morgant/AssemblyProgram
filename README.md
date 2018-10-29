@@ -13,3 +13,13 @@ It aims to make use of Object-Orientated Programming styles and techniques. This
 - Built in help
 - Error reporting messages
 - Dark theme
+
+## How to use
+Download it.
+
+Jun the jar by typing  `Java -jar AssemblyProgram-x-xx-xx.jar` in your terminal.
+
+Or just double click it.
+
+## Screen shots 
+ [ ] To Do - add screen shots
