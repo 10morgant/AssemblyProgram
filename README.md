@@ -22,4 +22,4 @@ Jun the jar by typing  `Java -jar AssemblyProgram-x-xx-xx.jar` in your terminal.
 Or just double click it.
 
 ## Screen shots 
- [ ] To Do - add screen shots
+- [ ] To Do - add screen shots
