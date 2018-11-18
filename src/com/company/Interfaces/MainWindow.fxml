@@ -101,12 +101,12 @@
                                               layoutY="10.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="170.0"
                                               styleClass="toggleButtonCss" text="Toggle" textAlignment="CENTER"
                                               AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+
                                 <ToggleButton fx:id="toggleGridPane" alignment="CENTER" layoutX="590.0"
                                               layoutY="10.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="170.0"
-                                              styleClass="toggleButtonCss" text="Toggle Memory View"
+                                              styleClass="toggleButtonCss" text="Expand Memory View"
                                               textAlignment="CENTER"
-                                              AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0"/>
-
+                                              AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0" onAction="#updateToggleGrid"/>
                             </children>
                         </AnchorPane>
                     </children>

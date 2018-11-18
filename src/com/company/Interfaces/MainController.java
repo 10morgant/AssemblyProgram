@@ -4,14 +4,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -43,6 +41,8 @@ public class MainController implements Initializable {
     private Button openButton = new Button();
     @FXML
     private ToggleButton instructionSetButton = new ToggleButton();
+    @FXML
+    private ToggleButton toggleGridPane = new ToggleButton();
     @FXML
     private TabPane TabManager = new TabPane();
     @FXML
@@ -97,10 +97,10 @@ public class MainController implements Initializable {
         TabManager.getTabs().add(tab);
     }
 
-    private void changeToMinimum() {
+    private void changeFXML(String fxml) {
         try {
             Stage stage = (Stage) executeButton.getScene().getWindow();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
 
             Parent root = loader.load(); // load the fxml
             stage.getScene().setRoot(root);
@@ -111,8 +111,24 @@ public class MainController implements Initializable {
     }
 
     public void changeRun() {
-        changeToMinimum();
+        changeFXML("login.fxml");
+        createPopup();
         setup();
+    }
+
+    private void createPopup() {
+    }
+
+    public void updateToggleGrid() {
+        boolean isSelected = toggleGridPane.isSelected();
+        assert (isSelected);
+        if (isSelected) {
+            changeFXML("login.fxml");
+
+        } else {
+            changeFXML("MainWindow.fxml");
+        }
+
     }
 
 }

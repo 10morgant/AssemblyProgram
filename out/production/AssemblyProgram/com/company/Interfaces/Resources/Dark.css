@@ -54,6 +54,11 @@
     -fx-background-color: #3c3f41;
 }
 
+.plane-pane{
+    -fx-background-color: #323232;
+    -fx-box-border: transparent;
+}
+
 .contentSplitPaneCss {
     -fx-background-color: #323232;
     -fx-box-border: transparent;
