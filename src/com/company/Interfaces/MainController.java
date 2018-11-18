@@ -1,11 +1,17 @@
 package com.company.Interfaces;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -30,9 +36,17 @@ public class MainController implements Initializable {
     @FXML
     private Button lineStepButton = new Button();
     @FXML
+    private Button saveButton = new Button();
+    @FXML
+    private Button saveAllButton = new Button();
+    @FXML
+    private Button openButton = new Button();
+    @FXML
     private ToggleButton instructionSetButton = new ToggleButton();
     @FXML
     private TabPane TabManager = new TabPane();
+    @FXML
+    private Pane topLevelPane = new Pane();
     @FXML
     private VBox topPane = new VBox();
     @FXML
@@ -69,6 +83,11 @@ public class MainController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        setup();
+
+    }
+
+    private void setup() {
         Tab tab = new Tab("Tab 1");
 
         TextArea textArea = new TextArea("Some Text");
@@ -78,5 +97,22 @@ public class MainController implements Initializable {
         TabManager.getTabs().add(tab);
     }
 
+    private void changeToMinimum() {
+        try {
+            Stage stage = (Stage) executeButton.getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
+
+            Parent root = loader.load(); // load the fxml
+            stage.getScene().setRoot(root);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void changeRun() {
+        changeToMinimum();
+        setup();
+    }
 
 }

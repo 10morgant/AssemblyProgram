@@ -49,6 +49,7 @@ public class MainWindowStarter extends Application {
             primaryStage.setResizable(true); // allow the window to resize
             primaryStage.setMaximized(true);
             primaryStage.show(); // make the window visible
+            primaryStage.setX(1940);
             primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
                 @Override
                 public void handle(WindowEvent event) {

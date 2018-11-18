@@ -20,29 +20,18 @@
             <center>
                 <AnchorPane prefHeight="837.0" prefWidth="1210.0" BorderPane.alignment="CENTER">
                     <children>
-                        <SplitPane fx:id="mainContent" dividerPositions="0.37" layoutY="1.0" prefHeight="853.0"
-                                   prefWidth="1210.0" styleClass="contentSplitPaneCss" AnchorPane.bottomAnchor="0.0"
-                                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                                        AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                <TabPane fx:id="TabManager" maxWidth="950.0" prefHeight="712.0" prefWidth="788.0"
-                                         styleClass="tabCss" tabClosingPolicy="UNAVAILABLE"
-                                         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                                         AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                    <tabs>
-                                    </tabs>
-                                </TabPane>
-                            </AnchorPane>
-                            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                                        AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                <GridPane fx:id="memory" styleClass="memoryGrid" AnchorPane.bottomAnchor="0.0"
-                                          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                                          AnchorPane.topAnchor="0.0">
+                        <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                    AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <TabPane fx:id="TabManager" maxWidth="950.0" prefHeight="712.0" prefWidth="788.0"
+                                     styleClass="tabCss" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0"
+                                     AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                     AnchorPane.topAnchor="0.0">
+                                <tabs>
 
-                                </GridPane>
+                                </tabs>
+                            </TabPane>
+                        </AnchorPane>
 
-                            </AnchorPane>
-                        </SplitPane>
                     </children>
                 </AnchorPane>
             </center>
@@ -101,11 +90,13 @@
                                               layoutY="10.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="170.0"
                                               styleClass="toggleButtonCss" text="Toggle" textAlignment="CENTER"
                                               AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+
                                 <ToggleButton fx:id="toggleGridPane" alignment="CENTER" layoutX="590.0"
                                               layoutY="10.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="170.0"
                                               styleClass="toggleButtonCss" text="Toggle Memory View"
                                               textAlignment="CENTER"
                                               AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0"/>
+
 
                             </children>
                         </AnchorPane>
