@@ -83,6 +83,7 @@ public class MainController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        System.out.println("initialized");
         setup();
 
     }
@@ -90,7 +91,9 @@ public class MainController implements Initializable {
     private void setup() {
         Tab tab = new Tab("Tab 1");
 
-        TextArea textArea = new TextArea("Some Text");
+        String textAreaText = "ADD RO RO #1\nSUB R0 R0 #2\nB LOOP\nLOOP: LDR R0\nHALT";
+
+        TextArea textArea = new TextArea(textAreaText);
         textArea.getStyleClass().add("codeEditorCss");
 
         tab.setContent(textArea);
@@ -102,6 +105,7 @@ public class MainController implements Initializable {
             Stage stage = (Stage) executeButton.getScene().getWindow();
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
 
+            loader.setController(this);
             Parent root = loader.load(); // load the fxml
             stage.getScene().setRoot(root);
 
