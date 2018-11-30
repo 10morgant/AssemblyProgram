@@ -94,12 +94,17 @@
 }
 
 /* Code Editor */
+.codeEditorLabelCss{
+    -fx-font-family: 'DejaVu Sans Mono'; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 14;
+    -fx-text-fill: #cfc9af;
+}
 .codeEditorCss {
     -fx-font-family: 'DejaVu Sans Mono'; /*"Blogger Sans Medium";*//* Montserrat;*/
     -fx-font-size: 14;
     -fx-text-fill: #cfc9af;
     -fx-border-color: #2b2b2b;
-}
+} /* /home/tim/Github/Personal/AssemblyProgram/out/production/AssemblyProgram/com/company/Interfaces/Resources */
 
 .codeEditorCss .content {
     -fx-background-color: #2b2b2b;

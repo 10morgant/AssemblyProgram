@@ -1,5 +1,6 @@
 package com.company.Interfaces;
 
+import javafx.embed.swing.SwingNode;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -89,15 +90,25 @@ public class MainController implements Initializable {
     }
 
     private void setup() {
-        Tab tab = new Tab("Tab 1");
-
         String textAreaText = "ADD RO RO #1\nSUB R0 R0 #2\nB LOOP\nLOOP: LDR R0\nHALT";
 
+        Tab tab = new Tab("Tab 1");
         TextArea textArea = new TextArea(textAreaText);
         textArea.getStyleClass().add("codeEditorCss");
-
         tab.setContent(textArea);
+
+        Tab tab2 = new Tab("Tab 2");
+        CodeEditor textAreaComponent = new CodeEditor(textAreaText);
+        SwingNode textArea2 = new SwingNode();
+        textArea2.setContent(textAreaComponent);
+        tab2.setContent(textArea2);
+
+        Tab tab3 = new Tab("Tab 3");
+        tab3.setContent(new Misc(textAreaText));
+
         TabManager.getTabs().add(tab);
+        TabManager.getTabs().add(tab2);
+        TabManager.getTabs().add(tab3);
     }
 
     private void changeFXML(String fxml) {
