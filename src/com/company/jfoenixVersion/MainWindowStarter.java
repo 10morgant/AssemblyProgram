@@ -1,4 +1,4 @@
-package com.company.Interfaces;
+package com.company.jfoenixVersion;
 
 import com.company.Data.Constants;
 import javafx.application.Application;
@@ -30,23 +30,11 @@ public class MainWindowStarter extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            //    Parent root = FXMLLoader.load(); // load the fxml
+            Parent root = FXMLLoader.load(getClass().getResource("MainWindow.fxml")); // load the fxml
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("MainWindow.fxml"));
-            MainController mc = new MainController();
-            loader.setController(mc);
-
-            Parent root = loader.load();
             Scene main = new Scene(root, 1920, 1000); //create the scene with the loaded objects. Set temp
 
             // resolution to fulfill parameter request.
-
-
-            String filePath = "Resources/Icon1.png";
-            URL url = this.getClass().getResource(filePath); // get the icon from inside the jar
-
-            Image appIcon = new Image(url.openStream()); // open the image
-            primaryStage.getIcons().add(appIcon); // add the icon
 
 //            main.getStylesheets().add(String.valueOf(getClass().getResource("FXMLCSS.css").toExternalForm()));
             primaryStage.setTitle(Constants.PROGRAM_NAME.getValue()); // set the program name using a constant value

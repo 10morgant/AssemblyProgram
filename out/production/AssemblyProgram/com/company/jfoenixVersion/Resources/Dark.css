@@ -1,0 +1,182 @@
+@font-face {
+    src: url('DejaVuSansMono.ttf');
+}
+
+* {
+    -fx-font-family: "DejaVu Sans Mono";
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/*Buttons */
+.buttonCss {
+    -fx-font-size: 12;
+    -fx-text-fill: #e5dfc5;
+    -fx-background-color: transparent;
+    /*  -fx-border-radius: 30 30 30 30;
+      -fx-background-radius: 30 30 30 30; */
+}
+
+.buttonCss:pressed {
+    /*  -fx-border-color: #79221f;*/
+    -fx-background-color: #79221f;
+}
+
+.buttonCss:hover {
+    /* -fx-border-color: #ad312d;*/
+    -fx-background-color: #ad312d;
+}
+
+.toggleButtonCss {
+    -fx-font-family: "Hanken"; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 12;
+    -fx-text-fill: #e5dfc5;
+    -fx-border-color: transparent;
+    -fx-base: transparent;
+    -fx-background-color: transparent;
+    /*   -fx-border-radius: 30 30 30 30;
+     -fx-background-radius: 30 30 30 30;  */
+}
+
+.toggleButtonCss:selected {
+    /*   -fx-border-color: #79221f; */
+    -fx-background-color: #79221f;
+    -fx-base: #79221f;
+}
+
+.toggleButtonCss:hover {
+    /*   -fx-border-color: #ad312d; */
+    -fx-background-color: #ad312d;
+    -fx-base: #ad312d;
+}
+
+/*Panes */
+.topPaneCss {
+    -fx-background-color: #333;
+}
+
+.memoryGrid {
+    -fx-background-color: #3c3f41;
+}
+
+.plane-pane{
+    -fx-background-color: #323232;
+    -fx-box-border: transparent;
+}
+
+.contentSplitPaneCss {
+    -fx-background-color: #323232;
+    -fx-box-border: transparent;
+}
+
+.contentSplitPaneCss .split-pane-divider {
+    -fx-background-color: #cfc9af;
+    /*  -fx-border-color: transparent #cfc9af transparent #cfc9af;*/
+}
+
+/* Output box */
+.outputPaneCss {
+    -fx-font-family: "Hanken"; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 14;
+    -fx-text-fill: #cfc9af;
+    -fx-border-color: #2b2b2b;
+}
+
+.outputPaneCss .content {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #2b2b2b;
+}
+
+.outputPaneCss .scroll-pane {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #cfc9af transparent transparent transparent;
+    -fx-border-width: 5px;
+}
+
+/* Code Editor */
+.codeEditorLabelCss{
+    -fx-font-family: 'DejaVu Sans Mono'; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 14;
+    -fx-text-fill: #cfc9af;
+}
+.codeEditorCss {
+    -fx-font-family: 'DejaVu Sans Mono'; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 14;
+    -fx-text-fill: #cfc9af;
+    -fx-border-color: #2b2b2b;
+} /* /home/tim/Github/Personal/AssemblyProgram/out/production/AssemblyProgram/com/company/Interfaces/Resources */
+
+.codeEditorCss .content {
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: #2b2b2b;
+}
+
+.codeEditorCss .scroll-pane {
+    -fx-background-color: #2b2b2b;
+}
+
+/*  Menu Bar  */
+.menuBarCss {
+    -fx-background-color: #3c3f41;
+}
+
+.menuBarCss .label {
+    -fx-font-family: Montserrat;
+    -fx-font-size: 12;
+    -fx-text-fill: #cfc9af;
+}
+
+.menuBarCss .menu-item .label {
+    -fx-font-family: Montserrat;
+    -fx-font-size: 12;
+    -fx-text-fill: #cfc9af;
+}
+
+.menuBarCss .menu-item {
+    -fx-background-color: #3c3f41;
+}
+
+.menuBarCss .menu-button:hover {
+    -fx-background-color: #ad312d;
+}
+
+.menuBarCss .menu-button:showing {
+    -fx-background-color: #79221f;
+}
+
+.menuBarCss .menu-item:focused {
+    -fx-background-color: #ad312d;
+}
+
+/* Tab */
+.tabCss .tab-header-background {
+    -fx-background-color: #3c3f41;
+}
+
+.tabCss .tab {
+    -fx-background-color: #323232;
+    -fx-border-color: transparent transparent #323232 transparent;
+    -fx-border-width: 0 1 4 0;
+
+    -fx-faint-focus-color: transparent;
+}
+
+.tabCss .tab:selected {
+    -fx-border-color: transparent transparent #ad312d transparent;
+}
+
+.tabCss .tab-label:selected {
+    -fx-focus-color: transparent;
+    -fx-border-color: transparent transparent #ad312d transparent;
+}
+
+.tabCss .tab-label {
+    -fx-font-family: "Hanken"; /*"Blogger Sans Medium";*//* Montserrat;*/
+    -fx-font-size: 12;
+    -fx-text-fill: #cfc9af;
+}
+
+.tabCss .tab-close-button {
+   /* -fx-background-color: #cfc9af;*/
+     -fx-background-color: #232328;
+}

@@ -10,10 +10,10 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.VBox?>
-
+<!--fx:controller="com.company.Interfaces.MainController"-->
 <AnchorPane fx:id="topLevelPane" prefHeight="1000.0" prefWidth="1210.0" stylesheets="@Resources/Dark.css"
             xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.company.Interfaces.MainController">
+             >
     <children>
         <BorderPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
                     AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
